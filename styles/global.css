@@ -1,6 +1,15 @@
+@import url('../fonts/fonts.css');
+
+:root {
+  --maincolor: #FFF;
+  --secondcolor: #000;
+}
+
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -8,31 +17,22 @@ body {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-blockquote {
-  margin: 0;
-  padding: 0;
+  text-underline-offset: 4px;
+  font-size: 18px;
+  color: var(--maincolor);
+  background-color: var(--maincolor);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 a {
-  color: inherit;
+  color: var(--secondcolor);
+}
+
+a:hover {
+    color: #686868;
 }
 
 img {
   width: 100%;
-}
-
-button {
-  font: inherit;
 }
