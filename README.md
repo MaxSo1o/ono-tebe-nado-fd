@@ -1,1 +1,1 @@
-https://github.com/MaxSo1o/ono-tebe-nado
+https://github.com/MaxSo1o/ono-tebe-nado-fd
