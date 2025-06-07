@@ -21,12 +21,21 @@ body {
   background-color: var(--maincolor);
 }
 
+button {
+  font-family: Raleway, sans-serif;
+}
+
 a {
+  text-decoration: inherit;
   color: var(--secondcolor);
 }
 
 a:hover {
-    color: #686868;
+  color: #686868;
+}
+
+a, span, p, button {
+  display: block;
 }
 
 img {
