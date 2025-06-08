@@ -4,7 +4,8 @@ header {
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     color: var(--secondcolor);
-    min-height: 293px;
+    padding-top: 91px;
+    padding-bottom: 97px;
     width: 100%;
 }
 
@@ -12,10 +13,10 @@ header {
 .nav__header>nav>ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     list-style: circle;
     text-wrap: nowrap;
-    gap: 32px;
+    margin-left: 50px;
+    gap: 33px;
     font-size: 18px;
 }
 
@@ -41,8 +42,9 @@ li.menu__firstpoint {
 .contacts {
     display: flex;
     flex-direction: column;
-    width: 240px;
+    width: 230px;
     font-style: normal;
+    line-height: 25px;
     /* Привет */
     /* Скажи пожалуйста, вложенность в CSS приветствуется или только в препроцессорах? */
     a {
@@ -51,7 +53,7 @@ li.menu__firstpoint {
 }
 
 .contacts__header {
-    margin-left: 180px;
+    margin-left: 187px;
 }
 
 /* Контейнер Cover */
@@ -73,24 +75,25 @@ section.cover {
 .cover__tittle {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 30px;
+    line-height: 115px;
     width: 100%;
     margin: auto 0;
 }
 
-.cover__tittle__first {
+.cover__align__left {
     text-align: left;
 }
 
-.cover__tittle__second {
+.cover__align__center {
     text-align: center;
     margin-right: -30px;
 }
 
-.cover__tittle__third {
+.cover__align__right {
     text-align: right;
     margin-right: -30px;
 }
@@ -145,12 +148,16 @@ section.lots {
 }
 
 /* Карточки */
-.lots__cards>ul {
+.lots__cards {
+    margin-top: -3px;
+    
+    ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin: 30px 0;
     counter-reset: background-img 0;
+}
 }
 
 /* Оформление ссылки */
@@ -223,6 +230,7 @@ section.about {
     width: 240px;
     border-radius: 50%;
     margin-top: 35px;
+    margin-left: -15px;
     background:#000;
 }
 
@@ -236,7 +244,7 @@ section.about {
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 100px;
+    margin-bottom: 102px;
     margin-left: 10px;
 }
 
@@ -244,12 +252,15 @@ section.about {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 24px;
+    padding-left: 10px;
+    width: 100%;
 }
 
 footer {
     width: 100%;
-    margin-top: 160px;
+    margin-top: 156px;
     padding: 0 50px;
+    padding-bottom: 82px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: var(--secondcolor)
